@@ -49,30 +49,30 @@ public class BasicOperations {
         addend2 = 18;
         
         //operation
-        sum = addend1 + addend2;
-        
-        System.out.println( " The addition of " + addend1 + " + " + addend2 + " is equal to >> " + sum);
+     sum = addend1 + addend2;
+      System.out.println( " The addition of " + addend1 + " + " + addend2 + " is equal to >> " + sum);
        
-    ++sum;
-    System.out.println (" Sum is equal to >> " + sum);
+     ++sum;
+      System.out.println (" Sum is equal to >> " + sum);
     
-   sum++;
-   System.out.println(" Sum is equal to >> " +sum);
+     sum++;
+      System.out.println(" Sum is equal to >> " +sum);
    
-   System.out.println(" addind one to sum " + (sum++));
+      System.out.println(" addind one to sum " + (sum++));
    
-   System.out.println(" adding one to sum " + (++sum));
-           
-   System.out.println(" The subtraction of " + minuend + " - " + subtrahend + " is equal to " + (minuend - subtrahend));
+      System.out.println(" adding one to sum " + (++sum));
    
-    multiplication = multiplicant * multiplier;
-        
-        System.out.println( " the product of the multiplication " + multiplicant + " * " + multiplier + " is equal to >> " + multiplication);
+     difference = minuend - subtrahend;   
+      System.out.println(" The subtraction of " + minuend + " - " + subtrahend + " is equal to " + (minuend - subtrahend));
+   
+     multiplication = multiplicant * multiplier; 
+      System.out.println( " the product of the multiplication " + multiplicant + " * " + multiplier + " is equal to >> " + multiplication);
        
-           
-        System.out.println(" The quotient of the division " + dividend + "/" + divisor + " is equal to >> " + ( dividend / divisor ));
-   
-        System.out.println(" The residue of the division " + dividend + "/" + divisor + " is equal to >>" + (dividend %divisor));
+     division = dividend / divisor;  
+      System.out.println(" The quotient of the division " + dividend + "/" + divisor + " is equal to >> " + ( dividend / divisor ));
+        
+     modulus = dividend % divisor;
+      System.out.println(" The residue of the division " + dividend + "/" + divisor + " is equal to >>" + (dividend %divisor));
     
    
     

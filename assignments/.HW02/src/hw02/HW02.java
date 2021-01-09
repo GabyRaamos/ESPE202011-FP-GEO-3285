@@ -47,13 +47,13 @@ public class HW02 {
     angle_sum = 180;
     
     angleBCA = angle_sum - angleCAB - angleABC;
-     System.out.println(" The the value of the angleBCA is >> " + angleBCA );
+     System.out.println("The internal angles of the right triangle are >> " + "\n" + "angleCAB = " + angleCAB + "\n" + "angleABC = "+ angleABC + "\n" + "angleBCA = "  +  angleBCA );
     
     Perimeter = (short) (side_a + side_b + side_c);
-     System.out.println(" The Perimeter of the right triangle is >> " + Perimeter);
+     System.out.println("The Perimeter of the right triangle is >> " + Perimeter);
      
     Area = (base + height)/2;
-     System.out.println( " The area of ​​the right triangle >> " + Area);
+     System.out.println( "The area of ​​the right triangle >> " + Area);
      
     }
     

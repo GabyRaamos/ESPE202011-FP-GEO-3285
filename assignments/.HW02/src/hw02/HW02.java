@@ -17,9 +17,10 @@ public class HW02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        //Let A, B, C be the vertices of the right triangle 
-    //
+      
+       //Let A, B, C be the vertices of the right triangle 
+        //
+        
     short Perimeter;
     short  side_a;
     short  side_b;
@@ -50,8 +51,10 @@ public class HW02 {
     
     Perimeter = (short) (side_a + side_b + side_c);
      System.out.println(" The Perimeter of the right triangle is >> " + Perimeter);
+     
     Area = (base + height)/2;
      System.out.println( " The area of ​​the right triangle >> " + Area);
+     
     }
     
 }

@@ -20,13 +20,13 @@ public class WS05Iterations {
         // TODO code application logic here
         
        
-                int i;
+        int i;
         i = 0;
 
         System.out.println("==== This is a while loop from 1 to 10 ====");
 
         while (i < 10) {
-            System.out.println("i -> " + (i + 1));
+            System.out.println("i -> " + (i+1) );
             //i += 1;
             i++;
             //i = i + 1;
@@ -55,7 +55,6 @@ public class WS05Iterations {
             product = table * j;
             System.out.println("7 * " + j + " = " + product);
         }
-        
         
     }
 }

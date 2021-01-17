@@ -6,6 +6,7 @@
 package hw02;
 
 import static java.time.Clock.system;
+import java.util.Scanner;
 
 /**
  *
@@ -17,7 +18,7 @@ public class HW02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      
+   
        //Let A, B, C be the vertices of the right triangle 
         //
         
@@ -57,4 +58,6 @@ public class HW02 {
      
     }
     
-}
+ }
+ 
+

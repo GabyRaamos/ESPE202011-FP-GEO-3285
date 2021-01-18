@@ -27,9 +27,9 @@ public class HW04 {
             System.out.println(" ========= Calculator =======");
             //Let A, B, C be the vertices of the right triangle 
             //
-            System.out.println("1. -> Hypotenuse of a right triangle given its legs'");
-            System.out.println("2. -> Hypotenuse of a right triangle given a AdjacentCathetus and an angle");
-            System.out.println("3. -> Hypotenuse of a right triangle given a OppositeCathetus and an angle");
+            System.out.println("1. -> Hypotenuse of a right triangle given its legs");
+            System.out.println("2. -> Hypotenuse of a right triangle given a adjacent cathetus and an angle");
+            System.out.println("3. -> Hypotenuse of a right triangle given a opposite cathetus and an angle");
             System.out.println("4. -> Internal angles of a right triangle");
             System.out.println("5. -> Area of a right triangle");
             System.out.println("6. -> Perimeter of a right triangle");
@@ -45,10 +45,10 @@ public class HW04 {
                     double CathetusA;
                     double CathetusB;
                      
-                    System.out.println("enter CathetusA -> ");
+                    System.out.println("enter cathetus A -> ");
                     CathetusA = input.nextDouble();
                      
-                    System.out.println("enter CathetusB -> ");
+                    System.out.println("enter cathetus B -> ");
                     CathetusB = input.nextDouble();
                     
                     hypotenuse = Math.hypot(CathetusA, CathetusB);
@@ -76,7 +76,7 @@ public class HW04 {
                     System.out.println("enter angle -> ");
                     angle = input.nextDouble();
                   
-                    System.out.println("enter Opposite cathetus -> ");
+                    System.out.println("enter opposite cathetus -> ");
                     OppositeCathetus = input.nextDouble();
                     hypotenuse = OppositeCathetus * Math.sin(angle);
                   

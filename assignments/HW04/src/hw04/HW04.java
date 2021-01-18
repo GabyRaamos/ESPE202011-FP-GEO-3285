@@ -27,11 +27,11 @@ public class HW04 {
             System.out.println(" ========= Calculator =======");
             //Let A, B, C be the vertices of the right triangle 
             //
-            System.out.println("1. -> Hypotenuse of a right triangle given its cathetus'");
+            System.out.println("1. -> Hypotenuse of a right triangle given its legs'");
             System.out.println("2. -> Hypotenuse of a right triangle given a AdjacentCathetus and an angle");
             System.out.println("3. -> Hypotenuse of a right triangle given a OppositeCathetus and an angle");
             System.out.println("4. -> Internal angles of a right triangle");
-            System.out.println("5. -> Area of ​​a right triangle");
+            System.out.println("5. -> Area of a right triangle");
             System.out.println("6. -> Perimeter of a right triangle");
             System.out.println("7. -> Exit");
            

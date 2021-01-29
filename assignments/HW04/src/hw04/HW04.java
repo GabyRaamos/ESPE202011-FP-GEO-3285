@@ -1,5 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+
+ /* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -29,11 +29,11 @@ public class HW04 {
             //
             System.out.println("1. -> Hypotenuse of a right triangle given its legs");
             System.out.println("2. -> Hypotenuse of a right triangle given a adjacent cathetus and an angle");
-<<<<<<< HEAD
+
             System.out.println("3. -> Hypotenuse of a right triangle given a Opposite cathetus and an angle");
-=======
+
             System.out.println("3. -> Hypotenuse of a right triangle given a opposite cathetus and an angle");
->>>>>>> 9ad67dc22c27a282810d6ac093a6006d45942d2a
+
             System.out.println("4. -> Internal angles of a right triangle");
             System.out.println("5. -> Area of a right triangle");
             System.out.println("6. -> Perimeter of a right triangle");

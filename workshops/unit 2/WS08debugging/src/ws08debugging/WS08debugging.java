@@ -43,7 +43,7 @@ public class WS08debugging {
 
         } while (multiplicand != 0);
 
-        System.out.println("Good bye");
+        System.out.println(" == Good bye User == ");
 
     }
 

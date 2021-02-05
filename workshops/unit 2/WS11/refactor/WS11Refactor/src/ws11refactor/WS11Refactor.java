@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw10funtions;
+package ws11refactor;
 
 import java.util.Scanner;
 
@@ -11,13 +11,12 @@ import java.util.Scanner;
  *
  * @author HP
  */
-public class HW10Funtions {
+public class WS11Refactor {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    
         int dividend;
         int divisor;
         float quotient = 0;
@@ -90,7 +89,5 @@ public class HW10Funtions {
         return producttable;
     }
 }
-    
-    
-    
-
+   
+  

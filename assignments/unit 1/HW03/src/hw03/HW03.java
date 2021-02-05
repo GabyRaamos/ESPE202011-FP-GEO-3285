@@ -59,7 +59,7 @@ public class HW03 {
         
         for(int G = 1 , H = 1 ; G <= stop && H <= stop; G = G*r , H = H*G ) {
             progression = a1 * G;
-              System.out.println( " a"+(a1++)+ " = "  + H );
+              System.out.println( progression +" a"+(a1++)+ " = "  + H  );
               
         }
        

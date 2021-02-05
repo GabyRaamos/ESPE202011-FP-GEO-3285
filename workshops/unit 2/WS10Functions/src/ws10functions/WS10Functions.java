@@ -7,7 +7,7 @@ package ws10functions;
 
 /**
  *
- * @author HP
+ * @author Gaby Ramos
  */
 public class WS10Functions {
 

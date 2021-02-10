@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hw11geoconverter;
 
 import java.util.Scanner;
 
 /**
  *
- * @author HP
+ * @author Gaby Ramos 
  */
 public class HW11Geoconverter {
 
@@ -23,30 +18,7 @@ public class HW11Geoconverter {
 
         do {
 
-            System.out.println("███████░▒*        WELCOME TO GEOCONVERTER       *░▒███████\n"
-                    + "█                         VERSION 1.0                             █\n"
-                    + "█                       20 JANUARY 2021                           █\n"
-                    + "████████████████████ ███████████████████████\n"
-                    + "                   Transformer of units of length                \n"
-                    + "                     _______________________         \n");
-            
-            System.out.println("  What would you like to do? ");
-            System.out.println("▒ 1.  Kilometers to meters.");
-            System.out.println("▒ 2.  Meters to centimeters.");
-            System.out.println("▒ 3.  Meters to millimeters");
-            System.out.println("▒ 4.  Meters to nanometers.");
-            System.out.println("▒ 5.  Meters to feet.");
-            System.out.println("▒ 6.  Meters to inches.");
-            System.out.println("▒ 7.  Centimeters to micrometers.");
-            System.out.println("▒ 8.  Centimeters to inches.");
-            System.out.println("▒ 9.  Millimeters to nanometers.");
-            System.out.println("▒ 10. Kilometers to centimeters.");
-            System.out.println("▒ 11. Miles to meters.");
-            System.out.println("▒ 12. Meters to yards.");
-            System.out.println("▒ 13. Gigameters to meters.");
-            System.out.println("█ 14. Exit");
-
-            System.out.println("Enter your menu option >> ");
+            printConvertionMenu();
 
             option = input.nextInt();
 
@@ -111,6 +83,33 @@ public class HW11Geoconverter {
             }
         } while (option != 14);
 
+    }
+
+    private static void printConvertionMenu() {
+        System.out.println("███████░▒*        WELCOME TO GEOCONVERTER       *░▒███████\n"
+                + "█                         VERSION 1.0                             █\n"
+                + "█                       20 JANUARY 2021                           █\n"
+                + "████████████████████ ███████████████████████\n"
+                + "                   Transformer of units of length                \n"
+                + "                     _______________________         \n");
+        
+        System.out.println("  What would you like to do? ");
+        System.out.println("▒ 1.  Kilometers to meters.");
+        System.out.println("▒ 2.  Meters to centimeters.");
+        System.out.println("▒ 3.  Meters to millimeters");
+        System.out.println("▒ 4.  Meters to nanometers.");
+        System.out.println("▒ 5.  Meters to feet.");
+        System.out.println("▒ 6.  Meters to inches.");
+        System.out.println("▒ 7.  Centimeters to micrometers.");
+        System.out.println("▒ 8.  Centimeters to inches.");
+        System.out.println("▒ 9.  Millimeters to nanometers.");
+        System.out.println("▒ 10. Kilometers to centimeters.");
+        System.out.println("▒ 11. Miles to meters.");
+        System.out.println("▒ 12. Meters to yards.");
+        System.out.println("▒ 13. Gigameters to meters.");
+        System.out.println("█ 14. Exit");
+        
+        System.out.println("Enter your menu option >> ");
     }
 
     private static void transformGmToM(Scanner input) {

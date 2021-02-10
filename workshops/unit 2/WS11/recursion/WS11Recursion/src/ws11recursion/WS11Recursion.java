@@ -5,6 +5,8 @@
  */
 package ws11recursion;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HP
@@ -16,20 +18,21 @@ public class WS11Recursion {
      */
     public static void main(String[] args) {
        
-        int number = -5;
+        int number = 5;
         int fact = 0;
-        fact = factorial(number);
+       
+        fact = ShowTheFactorial(number);
         System.out.println("Factorial of the " + number + " is equal to " + fact);
     }
 
-    public static int factorial(int n) {
+    public static int ShowTheFactorial(int n) {
         if (n < 0) {
             return -1;
         } else {
             if (n == 0) {
                 return 1;
             } else {
-                return (n * factorial(n - 1));
+                return (n * ShowTheFactorial(n - 1));
             }
 
         }

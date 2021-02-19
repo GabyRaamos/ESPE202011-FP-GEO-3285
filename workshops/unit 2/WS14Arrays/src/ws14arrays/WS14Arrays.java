@@ -1,5 +1,6 @@
 package ws14arrays;
 
+import java.util.Scanner;
 /**
  *
  * @author Gaby Ramos
@@ -10,6 +11,7 @@ public class WS14Arrays {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         int[] eggsByCoop;
         String[] chickens = {"Lucy", "Maruja", "Pepita"};
         float[] weightsByCoop = {1.2F, 2.4F, 45.2F, 80.1F, 4.3F, 4.5F};

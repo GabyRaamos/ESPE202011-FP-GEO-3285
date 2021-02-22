@@ -14,6 +14,7 @@ public class Quiz {
     public static void main(String[] args) {
         //Hardware Store Products and Prices
         Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int option;
         System.out.println("Welcome");
         System.out.println("1.- Review the products in stock");
@@ -29,13 +30,15 @@ public class Quiz {
             System.out.println("3.-nails");
             System.out.println("4.-tacks");
             int n;
-            System.out.println("Enter the number of product -> ");
+            
             n = input.nextInt();
 
+            nameOfProducts = new String[n];
             product = new int[n];
-
             for (int i = 0; i < n; i++) {
                 System.out.print("Enter the name of product " + (i + 1) + " -> ");
+                nameOfProducts[i] = scanner.nextLine();
+                System.out.println("Enter the number of product -> ");
                 product[i] = input.nextInt();
             }
             for (String name : nameOfProducts) {

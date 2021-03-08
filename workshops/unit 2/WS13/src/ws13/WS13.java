@@ -30,7 +30,7 @@ public class WS13 {
         float weather = 0;
         float acceleration = 0;
         float distance;
-
+        System.out.println("\nAuthor: Gaby Ramos\n");
         do {
             option = printMenu(input);
 

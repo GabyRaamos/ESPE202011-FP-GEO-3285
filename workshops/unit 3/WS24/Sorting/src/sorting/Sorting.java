@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sorting;
 
 /**
@@ -18,36 +13,21 @@ public class Sorting {
         int[] integersToSort = {9, 7, 1, 6, 2, 3};
         System.out.println("Unsorted integers");
         printArray(integersToSort);
-        sortByBubbleSort(integersToSort);
+        BubbleSort.sort(integersToSort);
         System.out.println("");
         printArray(integersToSort);
+        SelectionSort selectionSort =new SelectionSort();
         
-        int [] integersToSort2 ={8,1,7,2,5};
+        int [] integersToSort2 ={42,30,-5,7,1,50};
         System.out.println("\nUnsorted integers");
         printArray(integersToSort2);
-        sortByBubbleSort(integersToSort2);
+        selectionSort.sort(integersToSort2);
         System.out.println("");
         printArray(integersToSort2);
        
 
     }
 
-    public static void sortByBubbleSort(int integers[]) {
-        int temp;
-        int n = integers.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (integers[j] > integers[j + 1]) {
-                    temp = integers[j];
-                    integers[j] = integers[j + 1];
-                    integers[j + 1] = temp;
-                }
-                System.out.print("sorting -->  ");
-                printArray(integers);
-            }
-            System.out.println("");
-        }
-    }
 
     public static void printArray(int[] integers) {
         int n = integers.length;

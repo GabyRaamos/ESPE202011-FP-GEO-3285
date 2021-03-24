@@ -59,13 +59,18 @@ public class FrmAnimals extends javax.swing.JFrame {
 
         jLabel6.setText("approximate number of existing species:");
 
-        cmbAnimals.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "mammals", "amphibians", "reptiles", "birds" }));
+        cmbAnimals.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "mammal", "amphibian", "reptil", "bird" }));
 
         btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("classification of the animal:");
 
-        cmbClassificationAnimals.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "vertebrates", "invertebrates" }));
+        cmbClassificationAnimals.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "vertebrate", "invertebrate" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,14 +102,14 @@ public class FrmAnimals extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtyearsOfLifeOfTheSpecies)
+                            .addComponent(txtNumberOfExistingSpecies)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnSave)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(cmbAnimals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cmbClassificationAnimals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 46, Short.MAX_VALUE))
-                            .addComponent(txtNumberOfExistingSpecies))))
-                .addContainerGap(16, Short.MAX_VALUE))
+                                    .addComponent(cmbClassificationAnimals, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnSave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 63, Short.MAX_VALUE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,35 +143,37 @@ public class FrmAnimals extends javax.swing.JFrame {
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cmbClassificationAnimals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addComponent(btnSave))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(btnSave)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt){
-    String animalsName;
-    String dangerOfExtincion;
-    String modeOfReproduction;
-    float yearsOfLifeOfTheSpecies;
-    int NumberOfExistingSpecies;
-    String classificationOfTheAnimals;
-    String classificationOfTheAnimals2;
-    String data;
-    
-    animalsName = txtanimalsName.getText();
-    dangerOfExtincion = txtdangeriousExtincion.getText();
-    modeOfReproduction = txtmodeOfReproduction.getText();
-    NumberOfExistingSpecies = Integer.parseInt(txtNumberOfExistingSpecies.getText());
-    yearsOfLifeOfTheSpecies = Float.parseFloat(txtyearsOfLifeOfTheSpecies.getText());
-    classificationOfTheAnimals = cmbAnimals.getSelectedItem().toString();
-    classificationOfTheAnimals2 = cmbClassificationAnimals.getSelectedItem().toString();
-    
-    data = animalsName + "," + dangerOfExtincion + "," + modeOfReproduction + "," + yearsOfLifeOfTheSpecies + "," + NumberOfExistingSpecies + "," + classificationOfTheAnimals + "," + classificationOfTheAnimals2;
-    
-    JOptionPane.showMessageDialog(null,data);
-}
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        String animalsName;
+        String dangerOfExtincion;
+        String modeOfReproduction;
+        float yearsOfLifeOfTheSpecies;
+        int NumberOfExistingSpecies;
+        String classificationOfTheAnimals;
+        String classificationOfTheAnimals2;
+        String data;
+
+        animalsName = txtanimalsName.getText();
+        dangerOfExtincion = txtdangeriousExtincion.getText();
+        modeOfReproduction = txtmodeOfReproduction.getText();
+        NumberOfExistingSpecies = Integer.parseInt(txtNumberOfExistingSpecies.getText());
+        yearsOfLifeOfTheSpecies = Float.parseFloat(txtyearsOfLifeOfTheSpecies.getText());
+        classificationOfTheAnimals = cmbAnimals.getSelectedItem().toString();
+        classificationOfTheAnimals2 = cmbClassificationAnimals.getSelectedItem().toString();
+
+        data = animalsName + "," + dangerOfExtincion + "," + modeOfReproduction + "," + yearsOfLifeOfTheSpecies + "," + NumberOfExistingSpecies + "," + classificationOfTheAnimals + "," + classificationOfTheAnimals2;
+
+        JOptionPane.showMessageDialog(null, data);
+    }//GEN-LAST:event_btnSaveActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -220,3 +227,6 @@ public class FrmAnimals extends javax.swing.JFrame {
     private javax.swing.JTextField txtyearsOfLifeOfTheSpecies;
     // End of variables declaration//GEN-END:variables
 }
+
+
+

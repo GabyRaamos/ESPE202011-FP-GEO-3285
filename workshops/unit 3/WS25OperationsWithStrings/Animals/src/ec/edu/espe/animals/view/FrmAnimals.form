@@ -55,19 +55,19 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="txtyearsOfLifeOfTheSpecies" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnSave" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cmbAnimals" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cmbClassificationAnimals" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="46" max="32767" attributes="0"/>
-                          </Group>
                           <Component id="txtNumberOfExistingSpecies" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="cmbAnimals" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbClassificationAnimals" max="32767" attributes="0"/>
+                                  <Component id="btnSave" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="63" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -111,8 +111,9 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="cmbClassificationAnimals" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="8" max="32767" attributes="0"/>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
               <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -162,10 +163,10 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
-            <StringItem index="0" value="mammals"/>
-            <StringItem index="1" value="amphibians"/>
-            <StringItem index="2" value="reptiles"/>
-            <StringItem index="3" value="birds"/>
+            <StringItem index="0" value="mammal"/>
+            <StringItem index="1" value="amphibian"/>
+            <StringItem index="2" value="reptil"/>
+            <StringItem index="3" value="bird"/>
           </StringArray>
         </Property>
       </Properties>
@@ -177,6 +178,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
@@ -187,8 +191,8 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="2">
-            <StringItem index="0" value="vertebrates"/>
-            <StringItem index="1" value="invertebrates"/>
+            <StringItem index="0" value="vertebrate"/>
+            <StringItem index="1" value="invertebrate"/>
           </StringArray>
         </Property>
       </Properties>
